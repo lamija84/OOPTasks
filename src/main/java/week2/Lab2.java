@@ -1,5 +1,4 @@
-﻿package week2;
-
+package week2;
 import java.util.Scanner;
 
 /*public class Lab2 {
@@ -65,7 +64,7 @@ public class Lab2{
         System.out.println("Sum in the end is: " +sum);
     }
 }
-*/
+
 public class Lab2{
     public static void main(String[] args)
     {
@@ -89,3 +88,149 @@ public class Lab2{
         }
     }
 }
+
+public class Lab2 {
+    public static void main(String[] args)
+    {
+        Scanner reader = new Scanner(System.in);
+        System.out.println("Enter a number of raising: ");
+        int power = reader.nextInt();
+        int sum = 0;
+        for (int i = 0; i <= power; i++)
+        {
+            int result = (int) Math.pow(2, i);
+            sum += result;
+        }
+        System.out.println("Result is: " + sum);
+    }
+}
+
+public class Lab2 {
+    public static void main(String[] args)
+    {
+        Scanner reader=new Scanner(System.in);
+        System.out.println("Enter the number of times that text should be printed: ");
+        int number=Integer.parseInt(reader.nextLine());
+        for(int i=0;i<number;i++)
+        {
+            printText();
+
+        }
+
+    }
+    public static void printText()
+    {
+        System.out.println("In the beginning there were the swamp, the hoe and Java.");
+
+    }
+}
+
+public class Lab2 {
+    public static void main(String[] args)
+    {
+        printStars(3);
+        printStars(5);
+        printStars(1);
+    } private static void printStars(int amount)
+    {
+        for(int i=0;i<amount;i++) //ne smije biti jednako amountu jer kreće od 0
+        {
+            System.out.print("*"); //samo print zato što ne treba odmah ići u drugi red
+        }
+        System.out.println();
+    }
+
+}
+public class Lab2 {
+    public static void main(String[] args)
+    {
+       drawStarsPiramid(5);
+    }
+    public static void drawStarsPiramid(int rows)
+    {
+        for(int i=0;i<rows;i++)
+        {
+            for(int j=0;j<=i;j++)
+            {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+public class Lab2 {
+    public static void main(String[] args)
+    {
+        drawStarsPiramid(5);
+    }
+    public static void drawStarsPiramid(int rows)
+    {
+        for(int i=rows-1;i>=0;i--) // i>=0 da bi dosao i do zadnje prve zvjezdice
+        {
+            for(int j=0;j<=i;j++)
+            {
+                System.out.print("*" + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+public class Lab2 {
+    public static void main(String[] args)
+    {
+        drawStarsPiramid(5);
+    }
+    public static void drawStarsPiramid(int rows)
+    {
+        for(int i=0;i<rows;i++)
+        {
+            int number=1;
+            for(int j=0;j<=i;j++)
+            {
+                System.out.print(number + " ");
+                number++;
+            }
+            System.out.println();
+        }
+    }
+}
+public class Lab2 {
+    public static void main(String[] args)
+    {
+        drawStarsPiramid(10);
+    }
+    public static void drawStarsPiramid(int rows)
+    {
+
+        for(int i=1;i<=rows;i++)
+        {
+            for(int j=1;j<=i;j++)
+            {
+                System.out.print(i + " ");
+
+            }
+
+            System.out.println();
+        }
+    }
+}
+//drugi način
+public class Lab2 {
+    public static void main(String[] args) {
+        drawStarsPiramid(10);
+    }
+
+    public static void drawStarsPiramid(int rows) {
+        int number = 1;
+        for (int i = 0; i < rows; i++)
+        {
+            for (int j = 0; j <= i; j++)
+            {
+                System.out.print(number + " ");
+
+            }
+            number++;
+            System.out.println();
+        }
+    }
+}*/

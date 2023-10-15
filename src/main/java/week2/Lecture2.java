@@ -8,11 +8,21 @@ public class Lecture2 {
         System.out.println("Enter your age:");
         Scanner reader=new Scanner(System.in);
         int age=Integer.parseInt(reader.nextLine());
-        while(age>5 || age<58)
+        while(age < 5 || age > 85)
         {
-            System.out.println("Its ok");
-            break;
+
+            if (age < 5)
+            {
+                System.out.println("Its not okay!");
+            }
+            else if(age > 85) {
+                System.out.println("Its not okay again");
+            }
+            System.out.println("Enter your age again: ");
+            age = Integer.parseInt(reader.nextLine());
+
 
         }
-        System.out.println("Enter your age:");
-}}
+        System.out.println("Your age is " + age);
+    }
+}
