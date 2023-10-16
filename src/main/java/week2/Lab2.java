@@ -1,4 +1,5 @@
 package week2;
+import java.util.Random;
 import java.util.Scanner;
 
 /*public class Lab2 {
@@ -234,3 +235,40 @@ public class Lab2 {
         }
     }
 }*/
+public class Lab2
+{
+    public static void main(String[] args)
+    {
+        Random random = new Random();
+        int numberToGuess = drawNumber(random);
+        Scanner scanner = new Scanner(System.in);
+        int numberOfGuesses = 0;
+        int userGuess; // Declare the variable outside the loop
+
+        do {
+            System.out.print("Enter your guess: ");
+            userGuess = scanner.nextInt(); // Move this line inside the loop
+            numberOfGuesses++;
+
+            if (userGuess < 0 || userGuess > 100) {
+                System.out.println("Please enter a number between 0 and 100.");
+            } else if (userGuess == numberToGuess) {
+                System.out.println("Congratulations, your guess is correct!");
+                System.out.println("You made " + numberOfGuesses + " guesses.");
+            } else if (userGuess < numberToGuess) {
+                System.out.println("The number is greater.");
+            } else {
+                System.out.println("The number is lesser.");
+            }
+        } while (numberToGuess != userGuess);
+
+        scanner.close();
+    }
+
+    // Method to draw a random number
+    public static int drawNumber(Random random) {
+        return random.nextInt(101); // Generate a random number between 0 and 100
+    }
+}
+
+
