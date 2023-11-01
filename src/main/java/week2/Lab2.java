@@ -234,7 +234,7 @@ public class Lab2 {
             System.out.println();
         }
     }
-}*/
+}
 public class Lab2
 {
     public static void main(String[] args)
@@ -270,5 +270,10 @@ public class Lab2
         return random.nextInt(101); // Generate a random number between 0 and 100
     }
 }
+*/
+
+
+
+
 
 
