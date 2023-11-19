@@ -1,6 +1,6 @@
-package week5;
+package week5.lab;
 
-public class lab5 {
+public class firstTask {
     public interface NationalService {
         int getDaysLeft();
 
