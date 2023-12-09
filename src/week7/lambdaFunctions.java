@@ -44,8 +44,8 @@ public class lambdaFunctions {
         public String printMe(String prefix) {
             return prefix.concat(" IN THE ENGINE");
         }
-    }
-    public class Startable {
+    }}
+   /* public class Startable {
         public static void main(String[] args) {
             Engine engine = new Engine();
             readThing(engine);
@@ -120,3 +120,5 @@ public class lambdaFunctions {
         }
     }
 }
+
+    */

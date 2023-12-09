@@ -78,7 +78,8 @@ public class polymorphismAndEnums {
         }
 //////////////////////////////////////////////////////////////////////////////////////////////////
     }
-    public class Start {
+    }
+   /* public class Start {
         /**
          * Polymorphism means many shapes. Class can do the same thing in different ways.
          * There are two types of polymorphism in Java
@@ -87,7 +88,7 @@ public class polymorphismAndEnums {
          * 2. Run time polymorphism - method overriding
          *  - Which method to call is decided by the JVM in the run tine
          * */
-        public static void main(String[] args) {
+       /* public static void main(String[] args) {
             Animal animal = new Animal();
             animal.eat();
 
@@ -143,4 +144,6 @@ public class polymorphismAndEnums {
         }
     }
 }
+
+        */
 

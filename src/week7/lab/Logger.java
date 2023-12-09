@@ -10,19 +10,19 @@ public interface Logger {
         System.out.println("Record Logger [" + name + "]: " + message);
     }
 }
-class ClassLogger implements Logger
-{
+class ClassLogger implements Logger {
     private String name;
-    public ClassLogger(String name)
-    {
-        this.name=name;
+
+    public ClassLogger(String name) {
+        this.name = name;
     }
 
     @Override
     public void logMessage(String message) {
-        System.out.println("ClassLogger ["+ this.name + "]: "+ message);
+        System.out.println("ClassLogger [" + this.name + "]: " + message);
     }
-    public class LoggingSystem {
+}
+   /* public class LoggingSystem {
         public static void main(String[] args) {
             // Instantiate RecordLogger and log messages using lambda function
             // Instantiate ClassLogger and log messages using lambda function
@@ -34,4 +34,6 @@ class ClassLogger implements Logger
     }
 
 }
+
+    */
 

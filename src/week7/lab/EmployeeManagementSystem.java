@@ -32,7 +32,7 @@ public class EmployeeManagementSystem {
                 .forEach(employee -> System.out.println(employee.toString())); //just forEach za ispis
     }
 }
-public class Start {
+/*public class Start {
     public static void main(String[] args) {
         EmployeeManagementSystem employeeManagementSystem = new EmployeeManagementSystem();
 
@@ -53,4 +53,4 @@ public class Start {
         employeeManagementSystem.displayEmployeeDetails(employees);
     }
 }
-
+*/
