@@ -92,7 +92,7 @@ public class lab12 {
     }
 
 }
-public class ChatApplication {
+class ChatApplication {
     public static void main(String[] args) {
         lab12.ChatServer chatServer = new lab12.ChatServer();
         chatServer.start(12345);
